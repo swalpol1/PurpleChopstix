@@ -265,6 +265,11 @@
       font-weight: 300;
       font-style: normal;
     }
+
+    hr {
+      color: lightgrey;
+      height: 1px;
+    }
   </style>
 
   <!--HTML-->
@@ -527,9 +532,9 @@
           <!--Curry Dishes Secion-->
 
           <div class="line-on-side4">
-            <h3>Curry Dishes</h3>
-              <div class="line-on-side3">
-                <p>Simmered with fresh garlic and ginger and served over a bed of jasmine rice.</p>
+            <h1>Curry Dishes</h1>
+            <div class="line-on-side3">
+              <p>Simmered with fresh garlic and ginger and served over a bed of jasmine rice.</p>
             </div>
           </div>
           <div class="container">
@@ -575,9 +580,11 @@
 
               <br>
               <br>
+              <hr>
+              <br>
               <br>
 
-              <h3>Signature Crepes</h3>
+              <h1>Signature Crepes</h1>
               <div class="line-on-side4">
                 <div class="line-on-side3">
                   <p>Two homemade crepess served with jasmine rice and chef's steamed vegetables.
@@ -611,11 +618,13 @@
 
               <br>
               <br>
+              <hr>
+              <br>
               <br>
 
 
               <!--Pastas section-->
-              <h3>Pastas</h3>
+              <h1>Pastas</h1>
 
               <div class="col-sm-12 col-md-4">
                 <div class="card">
@@ -667,10 +676,12 @@
 
               <br>
               <br>
+              <hr>
+              <br>
               <br>
 
               <!--House Specialties Section-->
-              <h3>House Specialties</h3>
+              <h1>House Specialties</h1>
 
               <div class="col-sm-12 col-md-4">
                 <div class="card">
@@ -903,8 +914,23 @@
         <p>Purple Chopstix has a small lot in front of the restaurant. Additional parking is available across the
           street in the Hocking Valley Bank parking lot, when the bank is closed.</p>
 
+        <br>
+
         <h3>Taking Out?</h3>
         <p>Please call (740) 592-4798 to place a carry-out order!</p>
+
+        <br>
+
+        <h3>Hours of Operation:</h3>
+        <p><span>Sunday:</span> 11AM-1PM</p>
+        <p><span>Monday:</span> Closed</p>
+        <p><span>Tuesday:</span> Closed</p>
+        <p><span>Wednesday:</span> 5PM-8PM</p>
+        <p><span>Thursday:</span> 5PM-8PM</p>
+        <p><span>Friday:</span> 5PM-8:30PM</p>
+        <p><span>Saturday:</span> 5PM-8:30PM</p>
+
+        <br>
 
         <h3>Address:</h3>
         <p>371 Richland Avenue Athens, OH 45701</p>
@@ -931,43 +957,43 @@
     </footer>
     <br>
   </div>
-  
 
-<!--JAVASCRIPT-->
+
+  <!--JAVASCRIPT-->
 
   <!-- script for bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
     crossorigin="anonymous"></script>
 
-<!--smooth scroll effect-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
+  <!--smooth scroll effect-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Add smooth scrolling to all links
+      $("a").on('click', function (event) {
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
 
-      // Store hash
-      var hash = this.hash;
+          // Store hash
+          var hash = this.hash;
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function () {
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
       });
-    } // End if
-  });
-});
-</script>
+    });
+  </script>
 
 
 
